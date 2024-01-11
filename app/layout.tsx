@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/app/ui/globals.css";
-import { dmSans } from "./ui/fonts";
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={dmSans.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
